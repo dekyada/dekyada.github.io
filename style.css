@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	font-family: myriad pro, arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: black url(ducati.jpg) no-repeat fixed center;
+}
+h1{
+	font-family: "Rosewood std Regular";
+}
+a{
+  font-family: "Time News Roman";
+}
+#header {
+	background-color: darkblue;
+	color : white;
+	text-align : center;
+	width: 100%;
+	padding: 1.5rem 0px;
+	margin-bottom: 1rem;
+	font-size: 20px;
+}
+#menu {
+	display: block;
+	background-color: yellow;
+	padding: 10px;
+	margin-bottom: 1rem;
+	margin-left: auto;
+}
+#main {
+	background-color: ;
+	min-height: 400px;
+	padding: 1rem;
+	font-size: 18px;
+}
+#footer {
+	background-color: darkblue;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin-top: 1rem;
+}
+td {
+	font-family: Time News Roman;
+	color: white;
+}
+p{
+	font-family: Chiller;
+	font-size : 50px;
+	text-align: center;
+	color : white;
+
+}
+legend{
+	color: white;
+}

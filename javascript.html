@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<h1>Javascript</h1>
+	</div>
+	<div id="menu">
+		<a href="Home.html">Home</a> | <a href="profile.html">Profil</a> | <a href="contactus.html">Contact Us</a> | <a href="javascript.html">Javascript</a>
+	</div>
+	<div id="main">
+    <h3 id="warna">Ganti Warna Tulisan</h3>
+    <button type="button" onclick="document.getElementById('warna').style.color='#FF0000'">Warna Merah</button>
+    <button type="button" onclick="document.getElementById('warna').style.color='#0000FF'">Warna Biru</button>
+    <h3>Percabangan</h3>
+    <button onclick="percabangan()">Input Nomor Percabangan</button>
+    <div id="hasil1"></div>
+    <script>
+		function percabangan() {
+            var nilai1 = prompt("Masukkan Nilai (0-100):", 0);
+            if (nilai1>=70) {
+                hasil1 = "Sangat Baik";
+            }
+            else if (nilai1>=50) {
+                hasil1 = "Cukup";
+            }
+            else {
+                hasil1 = "Kurang";
+            }
+            document.getElementById("hasil1").innerHTML = "Nilai " + nilai1 + " Termasuk " + hasil1;
+        }
+	</script>
+    <h3>Perulangan</h3>
+    <button onclick="perulangan()">Input Angka Perulangan</button>	 
+	<div id="hasil2"></div>
+	<script>
+		function perulangan() {
+		    var text2 = "";
+            var nilai2 = prompt("Masukkan Angka (0-10):", 0);
+            for (var x = 1; x <= nilai2; x++) {
+                text2 += "Tulisan Ini Di Baris " + x + "<br>";
+		    }
+		    document.getElementById("hasil2").innerHTML = text2;
+		}
+    </script>
+	</div>
+</body>
+</html>
